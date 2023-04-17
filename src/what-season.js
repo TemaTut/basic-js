@@ -16,6 +16,27 @@ function getSeason(/* date */) {
   // remove line with error and write your code here
 }
 
+// function getSeason(date) {
+//   if (!date) {
+//     return 'Unable to determine the time of year!';
+//   }
+//   if (!(date instanceof Date) || isNaN(date)) {
+//     throw new Error("Invalid date!");
+//   }
+//   const myMounth = date.getMonth();
+
+//   switch (myMounth) {
+//     case 1, 0, 11:
+//       return 'winter';
+//     case 2, 3, 4:
+//       return 'spring';
+//     case 7, 5, 6:
+//       return 'summer';
+//     case 10, 9, 8:
+//       return 'autumn';
+//   }
+// }
+
 module.exports = {
   getSeason
 };
