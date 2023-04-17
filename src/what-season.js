@@ -23,7 +23,7 @@ function getSeason(date) {
   if (!(date instanceof Date)) {
     throw new Error("Invalid date!");
   }
-  if (isNaN(date) || Object.getOwnPropertyNames(date).includes('toString')) {
+  if (date.hasOwnProperty('toString')) {
     throw new Error("Invalid date!");
   }
 
